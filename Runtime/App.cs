@@ -8,6 +8,6 @@ namespace AppContextModule
             return (T)RootContext.Get(type);
         }
 
-        public static Context RootContext { get; set; }
+        public static Context RootContext { get; } = new();
     }
 }
